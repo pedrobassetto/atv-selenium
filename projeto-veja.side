@@ -1,0 +1,134 @@
+{
+  "id": "8e010b1b-3a06-4a47-a9ae-4719b161864f",
+  "version": "2.0",
+  "name": "projeto-veja",
+  "url": "https://veja.abril.com.br/",
+  "tests": [{
+    "id": "5ebf9309-71dc-4cc1-ab8b-ebfb17831b2c",
+    "name": "teste-filtro",
+    "commands": [{
+      "id": "a8179929-e132-4a13-a2f7-d3460c4468e1",
+      "comment": "",
+      "command": "open",
+      "target": "https://veja.abril.com.br/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15ec8fb9-b285-47f4-bf1b-5c3c37cb3eef",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1936x1056",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "96d29b80-3003-4b36-a25c-c2c23a8370bf",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=a > .hide-s:nth-child(2)",
+      "targets": [
+        ["css=a > .hide-s:nth-child(2)", "css:finder"],
+        ["xpath=//a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b4536930-35b3-48a4-8584-2e63634dd71b",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=a > .hide-s:nth-child(2)",
+      "targets": [
+        ["css=a > .hide-s:nth-child(2)", "css:finder"],
+        ["xpath=//a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd8b6953-2e13-4155-a507-00491815519f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "css=.searchOpener > .hide-s",
+      "targets": [
+        ["css=.searchOpener > .hide-s", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b199677f-9a4f-4f01-abb3-24da24581045",
+      "comment": "",
+      "command": "click",
+      "target": "css=.searchOpener > .hide-s",
+      "targets": [
+        ["css=.searchOpener > .hide-s", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d3ab1fa0-6a6a-4a95-a2ab-473bd1dd5313",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "css=.searchOpener > .hide-s",
+      "targets": [
+        ["css=.searchOpener > .hide-s", "css:finder"],
+        ["xpath=//div[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8a80d58-a0d0-4a38-bc3d-41af7ef84c68",
+      "comment": "",
+      "command": "click",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=s", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "37036b66-f202-4689-9bdd-82c8c1eee0a0",
+      "comment": "",
+      "command": "type",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=s", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "teste"
+    }, {
+      "id": "976aebea-e9e3-410e-a21e-232ef5fc059a",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=s", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "16abe70a-85a0-4a3d-83a9-c3d1b16559e6",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=.list-title > strong",
+      "targets": [
+        ["css=.list-title > strong", "css:finder"],
+        ["xpath=//strong", "xpath:position"]
+      ],
+      "value": "TESTE"
+    }]
+  }],
+  "suites": [{
+    "id": "14059cdd-bd22-48d9-b6f7-83c61062141a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5ebf9309-71dc-4cc1-ab8b-ebfb17831b2c"]
+  }],
+  "urls": ["https://veja.abril.com.br/"],
+  "plugins": []
+}
